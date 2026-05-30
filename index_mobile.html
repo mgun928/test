@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG ELECTRONICS mobile</title>
+
+    <style>
+        @font-face {
+            font-family: 'Paperozi';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-display: swap;
+        }
+
+
+        @font-face {
+            font-family: 'Paperozi600';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+            font-weight: 600;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Paperozi700';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-display: swap;
+        }   
+
+        @font-face {
+            font-family: 'Paperozi900';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+            font-weight: 900;
+            font-display: swap;
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+        body{
+            font-family:'Paperozi'
+        }
+
+        /* Header 영역 */
+        header{
+            background-color: #0a0f1e;
+            color: white;
+            padding: 20px;
+            display: flex;
+        }
+        header h3{
+            padding: 2px;
+            border-radius: 5px;
+            border-color: white;
+            border: solid 2px;
+            margin-right: 60px;
+            font-family: "Paperozi900";
+        }
+        header ul{
+            display: flex
+        }
+        header nav li{
+            margin-top: 4px;
+            margin-right: 20px;
+        }
+
+        header  a{
+            text-decoration: none;
+            color: white;
+        }
+        header nav a:hover{
+            color:#7eb8f7;
+        }
+        header nav a:active{
+            color: #4a90d9;
+        }
+        /* header 영역*/
+
+
+        /* main영역 */
+        /* 사이드바 및 페이지 문구 영역*/
+        .mobile h2 {
+            padding: 20px;
+            border-bottom: 2px solid #111;
+            background-color: #2d3748;
+            color: white;
+        }
+        
+        .container{
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .sidebar{
+            width: 250px;
+            border-radius: 8px;
+            background-color: #2d3748;
+            color: white;
+        }
+
+        .sidebar p{
+            font-family: Paperozi600;
+            margin: 10px 0 0 10px;
+            padding: 10px;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul{
+            font-family: Paperozi600;
+            margin-left: 20px;
+            padding: 10px;
+            font-size: 20px;
+        }
+        .sidebar ul li {
+        margin-bottom: 20px;
+        }
+        .sidebar a{
+            text-decoration: none;
+            color: white;
+        }
+        .sidebar a:hover{
+            color:#7eb8f7 ;
+        }
+        .sidebar a:active{
+            color:#4a90d9 ;
+        }
+
+        a.active{
+            color: #4a90d9;
+        }
+
+        /* 상품배치 part */
+        .product h2{
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+
+        section#main{
+            padding: 15px;
+        }
+
+
+        .product-card {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+        width: 49.5%;
+        display: inline-block;
+        }
+        .product-img {
+        background-color: #cce5f5;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        margin: 0 auto 10px auto;
+        /* margin-bottom: 10px; */
+        }
+        .product-img img{
+            width: 100%;
+            height: 100%
+        }
+        .product-price {
+        margin-top: 5px;
+        color: red;
+        }
+
+        .buy{
+            background-color: #111;
+            color: white;     
+            font-family: Paperozi;    
+            border: none;              
+            border-radius: 50px;       
+            padding: 12px 40px;      
+            margin-top: 10px;   
+            font-size: 14px;
+        }
+        .buy:hover{
+            background-color:#333;
+        }
+
+        /* 광고 배너 */
+        .ad-banner {
+        width: 350px;
+        background-image: url("ad_banner3.webp");
+        /* background-position: center center; */
+        border-radius: 8px;
+        /* display: flex; */
+        color:black;
+        font-size: 14px;
+        margin-left: auto;
+        }
+
+        .ad-banner h3{
+            color: black;
+            font-size: 25px;
+            margin: 20px 0 0 20px;
+        }
+        .ad-banner p{
+            margin: 0 0 5px 25px;
+        }
+        /* main영역 */
+
+        /* footer영역 */
+        footer{
+            background-color: #0a0f1e;
+            padding: 20px;
+        }
+        footer a{
+            color: gray;    
+            text-decoration: none;
+            font-size: 12px;
+        }
+        footer span{
+            color: gray;
+            font-size: 12px;
+            
+        }
+
+        @media (max-width: 768px) {
+        /* 헤더 */
+        header {
+            flex-wrap: wrap;
+        }
+
+        header nav ul {
+            margin: 10px 5px 0 5px;
+        }
+
+        header nav ul li a {
+            font-size: 13px;
+            margin-top: 220px;
+        }
+
+        /* 컨테이너 세로로 */
+        .container {
+            display: block;
+        }
+
+        /* 사이드바 */
+        .sidebar {
+            display: block;
+            width: 100%;
+        }
+
+        /* 상품 카드 1열로 */
+        .product-card {
+            width: 100%;
+        }
+
+        /* 광고 배너 가로로 꽉 */
+        .ad-banner {
+            width: 100%;
+            margin-left: 0;
+            height: 150px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header-->
+    <header>
+        <h3><a href="index.html">MG ELECTRONICS</a> </h3>
+        <nav>
+            <ul>
+                <li><a href="index_intro.html">회사 소개</a></li>
+                <li><a href="index_mobile.html" class="active">모바일</a></li>
+                <li><a href="index_kitchen.html">주방가전</a></li>
+                <li><a href="index_TV_life.html">TV/생활가전</a></li>
+                <li><a href="index_event.html">이벤트 </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main-->
+    <main>
+        <div class="mobile">
+            <h2>모바일</h2>
+
+            <div class="container">
+                <div class="sidebar">
+                    <p>카테고리</p>
+                    <ul>
+                        <li ><a href="index_mobile.html" class="active"> ▶ 스마트폰</a></li>
+                        <li><a href="index_mobile_tablet.html">태블릿PC</a></li>
+                        <li><a href="index_mobile_notebook.html">노트북</a></li>
+                        <li><a href="index_mobile_earpot.html">무선 이어폰</a></li>
+                    </ul>
+                </div>
+                
+                <section id="main">
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img"><img src="phone1.avif"></div>
+                <p class="product-name">MG phone25</p>
+                <p class="product-price">₩ 250,000</p>
+                <button class="buy">구매하기</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img"><img src="phone2.jpg"></div>
+                <p class="product-name">MG phone26</p>
+                <p class="product-price">₩ 560,000</p>
+                <button class="buy">구매하기</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img"><img src="phone3.jpg"></div>
+                <p class="product-name">MG phone25+</p>
+                <p class="product-price">₩ 450,000</p>
+                <button class="buy">구매하기</button>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img"><img src="phone4.jpg"></div>
+                <p class="product-name">MG phone26+</p>
+                <p class="product-price">₩ 800,000</p>
+                <button class="buy">구매하기</button>
+            </div>
+        </div>
+        </section>
+
+        <div class="ad-banner">
+            <h3>신규 AI 냉장고</h3><br>
+            <p>7/30까지 20%할인 쿠폰 증정!</p>
+            <p>지금 여러분의 냉장고를 만나보세요!</p>
+        </div>
+        </div> 
+        </div>
+    </main>
+
+    <!-- footer-->
+    <footer>
+        <a href="#">고객센터</a>
+        <span>|</span>
+        <a href="#">이용약관</a>
+        <span>|</span>
+        <a href="#">개인정보처리방침</a>
+        <span>|</span>
+        <span>© MG Electronics</span>
+    </footer>
+</body>
+</html>

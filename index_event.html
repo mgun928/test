@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MG ELECTRONICS INTRO</title>
+
+    <style>
+        @font-face {
+            font-family: 'Paperozi';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-4Regular.woff2') format('woff2');
+            font-weight: 400;
+            font-display: swap;
+        }
+
+
+        @font-face {
+            font-family: 'Paperozi600';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-6SemiBold.woff2') format('woff2');
+            font-weight: 600;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'Paperozi700';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-7Bold.woff2') format('woff2');
+            font-weight: 700;
+            font-display: swap;
+        }   
+
+        @font-face {
+            font-family: 'Paperozi900';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-9Black.woff2') format('woff2');
+            font-weight: 900;
+            font-display: swap;
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+        body{
+            font-family:'Paperozi'
+        }
+
+        /* Header 영역 */
+        header{
+            background-color: #0a0f1e;
+            color: white;
+            padding: 20px;
+            display: flex;
+        }
+        header h3{
+            padding: 2px;
+            border-radius: 5px;
+            border-color: white;
+            border: solid 2px;
+            margin-right: 60px;
+            font-family: "Paperozi900";
+        }
+        header ul{
+            display: flex
+        }
+        header nav li{
+            margin-top: 4px;
+            margin-right: 20px;
+        }
+
+        header  a{
+            text-decoration: none;
+            color: white;
+        }
+        header nav a:hover{
+            color:#7eb8f7;
+        }
+        header nav a:active{
+            color: #4a90d9;
+        }
+
+        a.active{
+            color: #4a90d9;
+        }
+        /* header 영역*/
+
+
+        /* main영역 */
+        .event_new{
+            background-image: url(event1.png);
+            background-position:  center center;
+            margin: 50px auto;
+            padding: 150px;
+            width: 1300px;
+            border-radius: 70px;
+            margin-bottom: 80px;
+            color: white;
+        }
+        .event_new h3{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .event_season{
+            background-image: url(event2.png);
+            background-position:  center center;
+            margin: 0 auto;
+            padding: 150px;
+            width: 1300px;
+            border-radius: 70px;
+            margin-bottom: 80px;
+            color:white;
+        }
+        .event_season h3{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .event_membership{
+            background-image: url(event3.png);
+            background-position:  center center;
+            margin: 0 auto;
+            padding: 150px;
+            width: 1300px;
+            border-radius: 70px;
+            margin-bottom: 80px;
+            color: white;
+        }
+        .event_membership h3{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+        /* main영역 */
+
+        /* footer영역 */
+        footer{
+            background-color: #0a0f1e;
+            padding: 20px;
+        }
+        footer a{
+            color: gray;    
+            text-decoration: none;
+            font-size: 12px;
+        }
+        footer span{
+            color: gray;
+            font-size: 12px;
+            
+        }
+
+        @media (max-width: 768px) {
+
+        header {
+            flex-wrap: wrap;
+        }
+
+    /* 이벤트 카드 3개 공통 */
+    .event_new,
+    .event_season,
+    .event_membership {
+        width: 90%;          /* 고정 1300px → 화면의 90%로 */
+        padding: 40px 20px;  /* 패딩 줄이기 */
+        border-radius: 30px;
+        margin: 20px auto;
+    }
+
+    .event_new h3,
+    .event_season h3,
+    .event_membership h3 {
+        font-size: 22px;
+    }
+
+    .event_new p,
+    .event_season p,
+    .event_membership p {
+        font-size: 13px;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+    <!-- header-->
+    <header>
+        <h3><a href="index.html">MG ELECTRONICS</a> </h3>
+        <nav>
+            <ul>
+                <li><a href="index_intro.html">회사 소개</a></li>
+                <li><a href="index_mobile.html" >모바일</a></li>
+                <li><a href="index_kitchen.html">주방가전</a></li>
+                <li><a href="index_TV_life.html"  >TV/생활가전</a></li>
+                <li><a href="index_event.html"  class="active" >이벤트 </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main-->
+    <main>  
+        <div class="event_new">
+            <h3>신제품 출시 이벤트</h3>
+            <p>MG phone26 출시 기념 사전예약 할인<br>
+                사전예약 고객 한정 10% 할인 + 무선 이어폰 증정</p>
+        </div>
+
+        <div class="event_season">
+            <h3>시즌 할인 이벤트</h3>
+            <p>여름 가전 특별 세일<br>
+                에어컨, 냉장고 최대 30% 할인 + 무료 설치 서비스 제공</p>
+        </div>
+
+        <div class="event_membership">
+            <h3>멤버쉽 이벤트</h3>
+            <p>MG 멤버십 가입 혜택 <br>신규 가입 시 5만원 적립금 즉시 지급 + 첫 구매 무료배송</p>
+        </div>
+
+    
+    </main>
+
+    <!-- footer-->
+    <footer>
+        <a href="#">고객센터</a>
+        <span>|</span>
+        <a href="#">이용약관</a>
+        <span>|</span>
+        <a href="#">개인정보처리방침</a>
+        <span>|</span>
+        <span>© MG Electronics</span>
+    </footer>
+</body>
+</html>
